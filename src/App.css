@@ -1,10 +1,16 @@
-.container{
-    max-width: 500px;
-    margin: 30px auto;
-    overflow: auto;
-    min-height: 300px;
-    border: 2px solid #DB1D4B;
-    padding: 30px;
-    border-radius: 10px;
-    color: white;
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid #db1d4b;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.container h1 {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }

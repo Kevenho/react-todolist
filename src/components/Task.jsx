@@ -1,19 +1,21 @@
 import React from "react";
 
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 import "./Task.css";
 
-const Task = ({ task, handleTaskClick }) => {
+const Task = ({ task, handleTaskClick, handleTaskDelete }) => {
   return (
     <div
       className="task-container"
-      onClick={() => handleTaskClick(task.id)}
       style={task.completed ? { borderColor: "#DB1D4B" } : {}}
     >
       <div className="task-title">
-        <p>{task.title}</p>
-        <span>{task.completed ? <FaCheckCircle /> : ""}</span>
+        <p onClick={() => handleTaskClick(task.id)}>{task.title}</p>
+        <div class="icons">
+          <span>{task.completed ? <FaCheckCircle /> : ""}</span>
+          <FaTimesCircle onClick={() => handleTaskDelete(task.id)} />
+        </div>
       </div>
     </div>
   );
