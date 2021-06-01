@@ -14,7 +14,12 @@ const App = () => {
     },
     {
       id: "2",
-      title: "Jogar Videojojos",
+      title: "Jogar Videojogos",
+      completed: true,
+    },
+    {
+      id: "3",
+      title: "Praticar React",
       completed: true,
     },
   ]);
