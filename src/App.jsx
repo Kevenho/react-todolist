@@ -19,7 +19,7 @@ const App = () => {
     },
     {
       id: "3",
-      title: "Praticar React",
+      title: "Praticar React c:",
       completed: true,
     },
   ]);
